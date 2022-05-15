@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="236.927" y1="80.629" x2="236.927" y2="295.075" id="gradient-2">
+      <stop offset="0" style="stop-color: rgba(85, 183, 218, 1)"/>
+      <stop offset="1" style="stop-color: rgba(36, 131, 165, 1)"/>
+    </linearGradient>
+    <filter id="inner-shadow-filter-0" x="-500%" y="-500%" width="1000%" height="1000%" bx:preset="inner-shadow 1 0 0 10 0.5 rgba(0,0,0,0.7)">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur stdDeviation="10"/>
+      <feComposite operator="out" in="SourceGraphic"/>
+      <feComponentTransfer result="choke">
+        <feFuncA type="linear" slope="1"/>
+      </feComponentTransfer>
+      <feFlood flood-color="rgba(0,0,0,0.7)" result="color"/>
+      <feComposite operator="in" in="color" in2="choke" result="shadow"/>
+      <feComposite operator="over" in="shadow" in2="SourceGraphic"/>
+    </filter>
+    <filter id="inner-shadow-filter-2" x="-500%" y="-500%" width="1000%" height="1000%" bx:preset="inner-shadow 1 0 0 10 0.5 rgba(0,0,0,0.7)">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur stdDeviation="10"/>
+      <feComposite operator="out" in="SourceGraphic"/>
+      <feComponentTransfer result="choke">
+        <feFuncA type="linear" slope="1"/>
+      </feComponentTransfer>
+      <feFlood flood-color="rgba(0,0,0,0.7)" result="color"/>
+      <feComposite operator="in" in="color" in2="choke" result="shadow"/>
+      <feComposite operator="over" in="shadow" in2="SourceGraphic"/>
+    </filter>
+    <filter id="drop-shadow-filter-0" x="-500%" y="-500%" width="1000%" height="1000%" bx:preset="drop-shadow 1 10 10 0 0.5 rgba(0,0,0,0.3)">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="0"/>
+      <feOffset dx="10" dy="10"/>
+      <feComponentTransfer result="offsetblur">
+        <feFuncA id="spread-ctrl" type="linear" slope="1"/>
+      </feComponentTransfer>
+      <feFlood flood-color="rgba(0,0,0,0.3)"/>
+      <feComposite in2="offsetblur" operator="in"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <circle style="paint-order: fill; fill-rule: nonzero; filter: url(#inner-shadow-filter-2); fill: rgb(164, 208, 231); stroke: rgb(207, 207, 207);" cx="236.927" cy="187.852" r="107.223" transform="matrix(1.919629, 0, 0, 2.197114, -182.734894, -160.373337)"/>
+  <circle style="fill: url(#gradient-2); filter: url(#inner-shadow-filter-0); stroke: rgb(164, 208, 231);" cx="236.927" cy="187.852" r="107.223" transform="matrix(1.919629, 0, 0, 2.197114, -230.735611, -162.151123)"/>
+  <circle style="fill: rgb(164, 208, 231); filter: none; stroke: rgb(164, 208, 231);" cx="237.823" cy="186.879" r="97.848" transform="matrix(1.919629, 0, 0, 2.197114, -232.513428, -159.929138)"/>
+  <path style="stroke-width: 2px; fill-rule: nonzero; fill: rgb(222, 83, 83); stroke: rgb(222, 83, 83); filter: url(#drop-shadow-filter-0);" d="M 263.736 207.155 L 263.795 204.011 L 376.036 223.698 C 397.892 239.041 371.785 255.661 355.139 243.976 Z M 84.265 243.973 C 67.515 255.652 41.549 239.039 63.544 223.698 L 175.932 204.008 L 175.969 207.149 Z M 195.66 258.259 L 195.704 246.631 L 207.733 235.006 L 195.806 223.384 L 199.836 211.766 L 187.889 207.887 L 183.873 211.766 L 183.929 200.14 L 187.902 204.011 L 195.92 196.261 L 215.843 204.011 L 227.828 204.011 L 243.829 196.261 L 251.779 204.011 L 255.791 200.14 L 255.735 211.766 L 251.762 207.887 L 239.769 211.766 L 243.716 223.384 L 231.682 235.006 L 243.612 246.631 L 243.566 258.259 Z M 195.641 262.135 L 243.55 262.135 C 247.527 266.004 251.499 269.884 251.48 273.759 C 256.459 273.759 224.37 351.024 219.396 351.024 C 214.52 351.266 182.54 274.006 187.609 273.759 C 187.626 269.884 191.632 266.004 195.641 262.135 Z M 179.63 269.884 L 139.631 289.253 L 107.444 347.367 L 103.468 343.494 L 131.886 285.134 L 187.654 262.135 Z M 251.531 262.135 L 307.077 285.134 L 335.023 343.494 L 331 347.367 L 299.302 289.255 L 259.486 269.697 Z M 191.448 308.624 L 151.423 331.868 L 127.226 389.99 L 123.247 386.111 L 143.456 327.997 L 187.475 304.75 Z M 251.346 304.75 L 295.169 327.997 L 314.883 386.114 L 310.875 389.99 L 287.163 331.874 L 247.345 308.628 Z M 199.997 176.893 L 191.993 180.767 L 200.058 161.396 L 175.593 138.633 L 183.256 138.475 L 208.043 161.396 L 235.985 161.396 L 260.048 138.15 L 268.029 138.15 L 243.976 161.396 L 251.873 180.767 L 243.909 176.893 L 235.889 184.642 L 207.944 184.642 Z M 187.654 188.518 L 183.413 192.579 L 139.58 176.921 L 99.844 126.407 L 92.402 130.132 L 100.113 118.774 L 143.552 173.2 Z M 296.401 173.2 L 340.297 118.774 L 347.912 130.129 L 340.49 126.407 L 300.334 176.921 L 255.817 192.389 L 251.842 188.518 Z" transform="matrix(0.960253, 0.27913, -0.27913, 0.960253, 70.957702, -52.474375)" bx:origin="0.5 0.384"/>
+</svg>

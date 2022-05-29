@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\src\\components",
+    "\\src\\components\\Header"
   ],
-  "SelectedNode": "\\next-env.d.ts",
+  "SelectedNode": "\\src",
   "PreviewInSolutionExplorer": false
 }

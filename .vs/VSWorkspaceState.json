@@ -1,9 +1,13 @@
 {
   "ExpandedNodes": [
     "",
+    "\\build",
+    "\\cypress",
+    "\\public",
+    "\\src",
     "\\src\\components",
     "\\src\\components\\Header"
   ],
-  "SelectedNode": "\\src",
+  "SelectedNode": "\\src\\components\\Header\\index.tsx",
   "PreviewInSolutionExplorer": false
 }

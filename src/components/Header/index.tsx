@@ -75,14 +75,17 @@ export const Header = observer(() => {
 
 
           <Stack direction={'row'} align={'center'} spacing={2} flex={{ base: 1, md: 'auto' }} justify={'flex-end'}>
-            <Link href="/">
+            <Button>
+            <LinkC href="https://pancakeswap.finance/swap?outputCurrency=0xf67fc4d0468d81bda60474b8bf4af8940db40141">
               <Stack as={'a'} direction={'row'} alignItems={'center'} spacing={{ base: 2, sm: 4 }}>
                 <Icon as={Logo} w={{ base: 8 }} h={{ base: 8 }} />
                 <Heading as={'h1'} fontSize={'xl'} display={{ base: 'none', md: 'block' }}>
                   {lang.t('Header.Menu1')}
                 </Heading>
               </Stack>
-            </Link>
+            </LinkC>
+            </Button>
+
 
             <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
               <DesktopNav />
